@@ -1,122 +1,101 @@
-📌 Customer Churn Prediction – Machine Learning Project
+# 📊 Customer Churn Prediction – Machine Learning Project
 
+## 📌 Problem Statement
+Customer churn is a major challenge for subscription-based businesses.  
+This project aims to predict whether a customer is likely to **churn (leave the service)** based on their demographic details, account information, and service usage patterns. Early churn prediction helps businesses take proactive retention actions.
 
+---
 
-🔹 Problem Statement
+## 📂 Dataset
+- **Source:** Telecom Customer Churn Dataset (Kaggle / IBM sample dataset)
+- **Rows:** 7,043 customers
+- **Target Variable:** `Churn` (Yes / No)
 
-Customer churn is a critical challenge for subscription-based businesses. This project aims to predict whether a customer is likely to churn based on demographic details, service usage, and billing information, and to identify the key factors influencing customer retention.
+### Key Features:
+- Customer demographics (gender, senior citizen, dependents)
+- Account information (tenure, contract type, payment method)
+- Services subscribed (internet, security, streaming, tech support)
+- Billing details (monthly charges, total charges)
 
+---
 
+## 🔧 Project Workflow
 
-🔹 Dataset Source
+### 1️⃣ Data Cleaning & Preprocessing
+- Converted `TotalCharges` from object to numeric
+- Handled missing values
+- Encoded categorical variables using **one-hot encoding**
+- Final dataset contained **32+ features**
 
-\- Dataset: Telco Customer Churn Dataset
+---
 
-\- Source: Kaggle
+### 2️⃣ Exploratory Data Analysis (EDA)
+Performed visual analysis to understand churn behavior:
+- Churn distribution (imbalanced: ~26% churn)
+- Churn vs Contract Type
+- Churn vs Internet Service
+- Monthly Charges vs Churn
+- Tenure vs Churn
+- Correlation heatmap for numeric features
 
-\- Records: 7,043 customers
+📊 Libraries used: **Seaborn, Matplotlib**
 
-\- Target Variable: Churn (Yes / No)
+---
 
-\- Features: Customer demographics, service subscriptions, contract details, and billing data
+### 3️⃣ Feature Engineering
+- Created derived features (e.g., high spenders)
+- Removed non-informative columns (Customer ID)
+- Stratified train-test split (80/20) to handle class imbalance
 
+---
 
+### 4️⃣ Model Building
+Trained and evaluated Machine Learning models:
+- **Logistic Regression**
+- **Random Forest Classifier**
 
-🔹 Steps Taken
+Evaluation Metrics:
+- Accuracy
+- Precision, Recall, F1-score
+- ROC-AUC Score
 
-1️⃣ Data Cleaning \& Preprocessing
+---
 
-\- Converted TotalCharges from object to numeric and handled missing values
+## 📈 Results
 
-\- Verified data quality and ensured no null values
+| Metric | Value |
+|------|------|
+| Accuracy | ~79% |
+| ROC-AUC | ~0.82 |
+| Churn Recall | ~50% |
 
-\- One-hot encoded categorical variables
+✅ ROC-AUC > 0.82 indicates good separation between churn and non-churn customers.
 
-\- Created new features such as High Spender flag and Tenure groups
+---
 
+## 🔍 Key Insights
+- Customers on **month-to-month contracts** churn more
+- **Higher monthly charges** are associated with higher churn
+- **Longer tenure customers** are less likely to churn
+- Lack of **online security and tech support** increases churn risk
 
+---
 
-2️⃣ Exploratory Data Analysis (EDA)
+## 🛠️ Tech Stack
+- **Programming:** Python
+- **Libraries:** Pandas, NumPy, Scikit-learn
+- **Visualization:** Matplotlib, Seaborn
+- **Tools:** Jupyter Notebook, Git, GitHub
 
-\- Analyzed churn distribution (class imbalance: ~26% churn)
+---
 
-\- Visualized churn trends across contract type, internet service, tenure, and monthly charges
-
-\- Identified higher churn among month-to-month contracts and short-tenure customers
-
-
-
-3️⃣ Feature Engineering
-
-\- Applied one-hot encoding to categorical variables (32 total features)
-
-\- Prepared ML-ready dataset
-
-\- Performed 80/20 train-test split with stratification
-
-
-
-4️⃣ Model Building \& Evaluation
-
-\- Trained Logistic Regression and Random Forest models
-
-\- Evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC
-
-\- Achieved ~79% accuracy and ROC-AUC ≈ 0.82
-
-
-
-🔹 Key Insights
-
-\- Month-to-month contract customers have the highest churn
-
-\- Customers with lower tenure are more likely to churn
-
-\- Higher monthly charges correlate strongly with churn
-
-\- Contract type and tenure are the strongest churn predictors
-
-
-
-🔹 Visualizations Included
-
-\- Churn distribution
-
-\- Churn by contract type
-
-\- Churn by internet service
-
-\- Monthly charges vs churn
-
-\- Tenure vs churn
-
-\- Correlation heatmap
-
-\- ROC curve and model evaluation plots
-
-
-
-🔹 Final Outputs
-
-\- Cleaned and ML-ready dataset
-
-\- Trained churn prediction model
-
-\- EDA and evaluation visualizations
-
-\- Feature importance analysis
-
-
-
-✅ Resume Value
-
-\- End-to-end ML pipeline
-
-\- Business-focused insights
-
-\- Strong evaluation metrics (ROC-AUC > 0.82)
-
-\- Clear data visualization and interpretation
-
+## 📁 Project Structure
+churn-analysis/
+│── data/
+│── notebooks/
+│ └── churn_eda.ipynb
+│── churn_cleaned.csv
+│── requirements.txt
+│── README.md
 
 
