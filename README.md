@@ -98,4 +98,13 @@ churn-analysis/
 │── requirements.txt
 │── README.md
 
-
+<img width="1091" height="599" alt="image" src="https://github.com/user-attachments/assets/2ea81201-933a-4625-a83a-e851f0c83b3e" />
+<img width="737" height="495" alt="Screenshot 2025-12-30 170822" src="https://github.com/user-attachments/assets/d34d4944-7ddc-418e-a0be-785e6dd0a5ea" />
+<img width="732" height="499" alt="Screenshot 2025-12-30 170835" src="https://github.com/user-attachments/assets/71261250-549c-4b72-a1cb-73e230820f15" />
+<img width="1195" height="851" alt="Screenshot 2025-12-30 170928" src="https://github.com/user-attachments/assets/efbc7421-3a7d-4aed-a45d-caa7b69e9fe4" />
+<img width="1293" height="650" alt="Screenshot 2025-12-30 170942" src="https://github.com/user-attachments/assets/22f3077e-69f6-455e-b426-6fd9218ef555" />
+<img width="674" height="545" alt="Screenshot 2025-12-30 171002" src="https://github.com/user-attachments/assets/13996ca0-f4ed-456a-b86d-32f01831bd77" />
+<img width="823" height="526" alt="Screenshot 2025-12-30 171008" src="https://github.com/user-attachments/assets/e62db27b-5a3a-4305-b870-45519d57a287" />
+<img width="1402" height="510" alt="Screenshot 2025-12-30 165824" src="https://github.com/user-attachments/assets/18826205-e1b8-4ba7-a65b-5acd6fef3e4a" />
+<img width="1333" height="829" alt="Screenshot 2025-12-30 171058" src="https://github.com/user-attachments/assets/8859c79e-3e10-433c-bdf4-b56c87e55c1f" />
+<img width="767" height="571" alt="Screenshot 2025-12-30 171112" src="https://github.com/user-attachments/assets/66c98262-20be-41e7-822d-e2860a71f35c" />
